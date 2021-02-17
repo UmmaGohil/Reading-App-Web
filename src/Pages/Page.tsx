@@ -2,12 +2,16 @@ import React from 'react';
 
 type PageProps = {
   title: string,
+  children: React.ReactNode
 }
 
-export const Page = ({ title }: PageProps) => <>
+ const Page = ({ title, children }: PageProps) => <>
   <h2>{ title }</h2>
   <p>
     [this is a page]
+    {children}
   </p>
 </>
+
+export default Page
 
