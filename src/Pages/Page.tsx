@@ -1,12 +1,21 @@
 import React from 'react';
+import CSS from 'csstype';
 
-interface PageProps  {
-  title: string,
-  children: React.ReactNode
+// ? is optional => title is string or undefined
+interface Props  {
+  title?: string,
+  children: React.ReactNode,
+  variant: "regular" | "dark"
 }
 
- const Page = ({ title, children }: PageProps) => <>
-  <h2>{ title }</h2>
+const h1Styles: CSS.Properties = {
+  color: 'red',
+  backgroundColor: 'blue',
+  fontSize: '5rem'
+};
+
+const Page = ({ title, variant, children }: Props) => <>
+  <h2 style={h1Styles}>{ title }</h2>
   <p>
     [this is a page]
     {children}

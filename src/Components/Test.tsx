@@ -2,7 +2,7 @@ import React from 'react';
 import Page from '../Pages/Page'
 
 const Test = () => 
-  <Page title="test">
+  <Page title="test" variant="regular">
     <p>
       [this is a component]
     </p>
