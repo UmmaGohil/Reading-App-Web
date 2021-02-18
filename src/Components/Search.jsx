@@ -2,10 +2,11 @@ import React from 'react';
 import Page from '../Pages/Page'
 
 const Search = () => 
-  <Page title="Searcg" variant="regular">
-    <p>
-      [search component]
-    </p>
+  <Page variant="regular">
+    <form>
+      <input type="text" />
+      <button>Go</button>
+    </form>
   </Page>
 
 export default Search

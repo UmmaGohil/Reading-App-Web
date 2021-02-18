@@ -16,10 +16,8 @@ const h1Styles: CSS.Properties = {
 
 const Page = ({ title, variant, children }: Props) => <>
   <h2 style={h1Styles}>{ title }</h2>
-  <p>
-    [this is a page]
+  
     {children}
-  </p>
 </>
 
 export default Page
