@@ -11,19 +11,19 @@ const routes = [
     name: Home,
   },
   {
-    path: '/',
+    path: '/Search',
     exact: true,
     component: Search,
     name: Search,
   },
   {
-    path: '/',
+    path: '/Calendar',
     exact: true,
     component: Calendar,
     name: Calendar,
   },
   {
-    path: '/',
+    path: '/Result',
     exact: true,
     component: Result,
     name: Result,
