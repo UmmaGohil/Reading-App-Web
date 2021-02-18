@@ -1,11 +1,11 @@
-import Test from '../Components/Test'
+import Home from '../Components/Home'
 
 const routes = [
   {
     path: '/',
     exact: true,
-    component: Test,
-    name: Test,
+    component: Home,
+    name: Home,
   },
   
 ]

@@ -1,12 +1,12 @@
 import React from 'react';
 import Page from '../Pages/Page'
 
-const Test = () => 
-  <Page title="test" variant="regular">
+const Home = () => 
+  <Page title="Home" variant="regular">
     <p>
       [this is a component]
     </p>
   </Page>
 
-export default Test
+export default Home
 
