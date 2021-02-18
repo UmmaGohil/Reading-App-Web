@@ -14,6 +14,12 @@ const Calendar = () => {
   console.log(startDate)
   console.log(endDate)
 
+  const oneDay = 24 * 60 * 60 * 1000;
+
+  const diff = Math.round(Math.abs((startDate - endDate/ (oneDay))))
+
+  console.log(diff)
+
   return(
     <Page variant="regular">
       <DateRangePicker
