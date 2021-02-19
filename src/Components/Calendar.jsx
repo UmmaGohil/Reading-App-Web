@@ -18,6 +18,7 @@ const Calendar = () => {
 
   const diff = Math.round(Math.abs((startDate - endDate/ (oneDay))))
 
+
   console.log(diff)
 
   return(
