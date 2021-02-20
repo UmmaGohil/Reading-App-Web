@@ -1,138 +1,48 @@
 {
   "meta": [],
   "data": [{
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
+    "title": "Summary of the Laws of Human Nature by Robert Greene",
+    "author": ["Dennis Braun"],
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544638130l/43206323._SY475_.jpg",
+    "noPages": 624,
+    "publicationYear": 2018,
+    "ISBN": 9781790861569,
+    "genre": ["psychology", "self-help", "personal development"]
   },
   {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
+    "title": "A Fine Balance: Drama",
+    "author": ["Sudha Bhuchar", "Kristine Landon-Smith"],
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1316735569l/1217313.jpg",
+    "noPages": 116,
+    "publicationYear": 2007,
+    "ISBN": 713688238,
+    "genre": ["fiction", "india", "indian literature"]
   },
   {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
+    "title": "The Modern Detective: How Corporate Intelligence Is Reshaping the World ",
+    "author": ["Tyler Maroney"],
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1581418006l/51168676.jpg",
+    "noPages": 272,
+    "publicationYear": 2020,
+    "ISBN": 1594632596,
+    "genre": ["non-fiction", "crime", "business"]
   },
   {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
+    "title": " The Bilingual Brain: And What It Tells Us about the Science of Language ",
+    "author": ["Albert Costa"],
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1575493066l/42981796._SY475_.jpg",
+    "noPages": 176,
+    "publicationYear": 2020,
+    "ISBN": 241391512,
+    "genre": ["non-fiction", "science", "linguistics", "psychology"]
   },
   {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
+    "title": "Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers",
+    "author": ["Andy Greenberg"],
+    "image": "https://www.goodreads.com/book/photo/41436213-sandworm",
+    "noPages": 370,
+    "publicationYear": 2019,
     "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
-  },
-  {
-    "title": "",
-    "image": "",
-    "noPages": 0,
-    "noChapters": 0,
-    "publicationYear": 0,
-    "ISBN": 0,
-    "genre": ""
+    "genre":["non-fiction", "history", "politics", "science", "technology"]
   }]
 }
