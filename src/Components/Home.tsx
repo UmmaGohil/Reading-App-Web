@@ -5,9 +5,9 @@ import Calendar from '../Components/Calendar'
 import Data from '../Data/Data.json'
 
 const Home = () => {
-  const [Result, setResult] = useState(string)
+  const [Result, setResult] = useState<null | {}>(null)
 
-  const searchChange = (e: any) => {
+  const searchChange = (e: any | string) => {
     const searchResult = Data.data.filter((element) => element.title.includes(e.target.value));
     setResult(searchResult)
   }
