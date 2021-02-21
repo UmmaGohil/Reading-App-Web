@@ -11,16 +11,9 @@ const Calendar = () => {
   // convert the dates and then computer the amount of days between them 
   // then send this down to results via a prop 
 
-  console.log(startDate)
-  console.log(endDate)
+  const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
 
-  const oneDay = 24 * 60 * 60 * 1000;
-
-  const diff = Math.round(Math.abs((startDate - endDate/ (oneDay))))
-
-
-  console.log(diff)
-
+  console.log(noDays)
   return(
     <Page variant="regular">
       <DateRangePicker
