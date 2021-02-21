@@ -42,7 +42,6 @@ const Calendar = () => {
         </div>
       )}
     </DateRangePicker>
-    
     </Page>
   )
 }

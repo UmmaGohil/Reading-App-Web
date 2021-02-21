@@ -1,6 +1,7 @@
 import React from 'react';
 import Page from '../Pages/Page'
 
+
 const Search = () => 
   <Page variant="regular">
     <form>
