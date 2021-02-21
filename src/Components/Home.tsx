@@ -7,7 +7,7 @@ import Data from '../Data/Data.json'
 const Home = () => {
   const [Result, setResult] = useState<null | {}>(null)
 
-  const searchChange = (e: any | string) => {
+  const searchChange = (e: any ) => {
     const searchResult = Data.data.filter((element) => element.title.includes(e.target.value));
     setResult(searchResult)
   }
