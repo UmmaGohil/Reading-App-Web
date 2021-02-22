@@ -6,7 +6,9 @@ import ResultData from '../Components/Result'
 import Data from '../Data/Data.json'
 
 const Home = () => {
-  const [Result, setResult] = useState< {}[]>([])
+  const [Result, setResult] = useState<{}[]>([])
+  const [startDate, setStartDate] = useState()
+  const [endDate, setEndDate] = useState()
 
   const searchChange = (e: any ) => {
     
@@ -14,11 +16,20 @@ const Home = () => {
     setResult(searchResult)
   }
 
+  /*const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
+
+  console.log(noDays)
+
+  console.log(Data.data.noPages)
+  
+  console.log("avg: " + (Data.data.noPages/noDays))
+  */
+
   return (
   <Page title="Home" variant="regular">
     <Search onChange={searchChange}/>
     <ResultData data={Result !== null ? Result : Data.data}/>
-    <Calendar />
+    <Calendar startDate={startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate}/>
   </Page>
   )
 }

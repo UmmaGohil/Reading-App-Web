@@ -14,7 +14,6 @@ const Search = ({ onChange }: Props) =>
         className='search'
         onChange={onChange}
       />
-      <button>Go</button>
     </form>
   </Page>
 

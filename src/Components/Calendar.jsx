@@ -1,19 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Page from '../Pages/Page'
 import { enGB } from 'date-fns/locale'
 import { DateRangePicker, START_DATE, END_DATE } from 'react-nice-dates'
 import 'react-nice-dates/build/style.css'
 
-const Calendar = () => {
-  const [startDate, setStartDate] = useState()
-  const [endDate, setEndDate] = useState()
+const Calendar = ({startDate, setStartDate, endDate, setEndDate}) => {
+
 
   // convert the dates and then computer the amount of days between them 
   // then send this down to results via a prop 
 
-  const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
-
-  console.log(noDays)
+  
   return(
     <Page variant="regular">
       <DateRangePicker

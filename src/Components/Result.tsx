@@ -7,9 +7,9 @@ interface Props {
 const Result = ({ data }: Props) => 
 
   // props for no. of days / home results [no.pages] => compute amount of days, weeks and months
-  <Page title="Result" variant="regular">
-      {data?.map((a: any) => (
-        <div className='post'>
+  <Page variant="regular">
+      {data?.map((a: any ) => (
+        <div key={a.name}>
           <p>{a.title}</p>
           <img src={a.image} alt={a.title}/>
           <p>{a.author}</p>
