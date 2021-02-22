@@ -24,6 +24,7 @@ const Home = () => {
   
   console.log("avg: " + (Data.data.noPages/noDays))
   */
+ //send a prop down to Result and assign it to a.noPages (and send it back up) ?
 
   return (
   <Page title="Home" variant="regular">
