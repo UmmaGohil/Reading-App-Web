@@ -11,6 +11,11 @@ const Result = ({ data }: Props) =>
       {data?.map((a: any) => (
         <div className='post'>
           <p>{a.title}</p>
+          <img src={a.image} alt={a.title}/>
+          <p>{a.author}</p>
+          <p>{a.noPages}</p>
+          <p>{a.ISBN}</p>
+          <p>{a.genre}</p>
         </div>
       ))}
   </Page>
