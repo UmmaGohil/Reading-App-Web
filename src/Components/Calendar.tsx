@@ -17,9 +17,7 @@ const Calendar = ({startDate, setStartDate, endDate, setEndDate}: Props) => {
 
   // convert the dates and then computer the amount of days between them 
   // then send this down to results via a prop 
-  const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
-
-  console.log(noDays)
+ 
   
   return(
     <Page variant="regular">

@@ -7,8 +7,8 @@ import Data from '../Data/Data.json'
 
 const Home = () => {
   const [Result, setResult] = useState<{}[]>([])
-  const [startDate, setStartDate] = useState()
-  const [endDate, setEndDate] = useState()
+  const [startDate, setStartDate] = useState<any>()
+  const [endDate, setEndDate] = useState<any>()
 
   const searchChange = (e: any ) => {
     
@@ -25,6 +25,12 @@ const Home = () => {
   console.log("avg: " + (Data.data.noPages/noDays))
   */
  //send a prop down to Result and assign it to a.noPages (and send it back up) ?
+
+ const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
+
+ const testing = endDate || startDate === undefined ? null : noDays
+
+ console.log(noDays)
 
   return (
   <Page title="Home" variant="regular">
