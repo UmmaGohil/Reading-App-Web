@@ -2,7 +2,7 @@ import React from 'react';
 import Page from '../Pages/Page'
 
 interface Props {
-  onChange(e: any) : null | {} | string | void | any
+  onChange(e: any): void 
 }
 
 const Search = ({ onChange }: Props) => 

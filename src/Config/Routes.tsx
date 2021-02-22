@@ -1,32 +1,12 @@
-import Calendar from '../Components/Calendar'
+import { RouteConfig } from 'react-router-config'
 import Home from '../Components/Home'
-import Result from '../Components/Result'
-import Search from '../Components/Search'
 
-const routes = [
+export const routes: RouteConfig[] = [
   {
     path: '/',
     exact: true,
     component: Home,
-    name: Home,
-  },
-  {
-    path: '/Search',
-    exact: true,
-    component: Search,
-    name: Search,
-  },
-  {
-    path: '/Calendar',
-    exact: true,
-    component: Calendar,
-    name: Calendar,
-  },
-  {
-    path: '/Result',
-    exact: true,
-    component: Result,
-    name: Result,
+    name: Home, 
   }
 ]
 
