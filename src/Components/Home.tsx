@@ -6,7 +6,7 @@ import ResultData from '../Components/Result'
 import Data from '../Data/Data.json'
 
 const Home = () => {
-  const [Result, setResult] = useState<null | {}>(null)
+  const [Result, setResult] = useState< {}[]>([])
 
   const searchChange = (e: any ) => {
     
@@ -17,7 +17,7 @@ const Home = () => {
   return (
   <Page title="Home" variant="regular">
     <Search onChange={searchChange}/>
-    <ResultData />
+    <ResultData data={Result !== null ? Result : Data.data}/>
     <Calendar />
   </Page>
   )
