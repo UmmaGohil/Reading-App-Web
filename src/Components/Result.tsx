@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react'
 import Page from '../Pages/Page'
+
 interface Props {
   data: {}[] 
 }

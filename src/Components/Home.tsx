@@ -13,7 +13,9 @@ const Home = () => {
   const searchChange = (e: any ) => {
     
     const searchResult = Data.data.filter((element) => element.title.includes(e.target.value));
+    //const test = Result !== null ? Result : Data.data.map(a => a.(Object.values(noPages)))
     setResult(searchResult)
+    //console.log(test)
   }
 
   /*const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
@@ -28,9 +30,24 @@ const Home = () => {
 
  const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
 
- const testing = endDate || startDate === undefined ? null : noDays
-
  console.log(noDays)
+
+ console.log(Result)
+
+ const newResult = Result
+
+ const pages = newResult.map(a => Object.values(a)[3])
+
+ console.log(...pages)
+ 
+ const parsePage = [...pages]
+
+ console.log('avg: ' + (parsePage/noDays))
+
+ //const test2 = Object.keys(Result).map((key: any) => [Result[key]])
+//const testtest = Result.map(a => ({a.data}))
+ //console.log(testtest)
+ //console.log(test2.map(a => a.Object.values(noPages)))
 
   return (
   <Page title="Home" variant="regular">
