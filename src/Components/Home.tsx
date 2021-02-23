@@ -40,7 +40,7 @@ const Home = () => {
 
  console.log(...pages)
  
- const parsePage = [...pages]
+ const parsePage: any = [...pages]
 
  console.log('avg: ' + (parsePage/noDays))
 
@@ -54,6 +54,7 @@ const Home = () => {
     <Search onChange={searchChange}/>
     <ResultData data={Result !== null ? Result : Data.data}/>
     <Calendar startDate={startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate}/>
+    {(parsePage/noDays)}
   </Page>
   )
 }
