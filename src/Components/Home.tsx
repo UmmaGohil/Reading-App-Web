@@ -4,7 +4,7 @@ import Search from '../Components/Search'
 import Calendar from '../Components/Calendar'
 import ResultData from '../Components/Result'
 import Data from '../Data/Data.json'
-import CSS from 'csstype';
+import CSS from 'csstype'
 
 const Home = () => {
   const [Result, setResult] = useState<{}[]>([])
@@ -16,15 +16,13 @@ const Home = () => {
     setResult(searchResult)
   }
 
-  const container: CSS.Properties = {
-    margin: '15px'
-  }
-
+  
   const row: CSS.Properties = {
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    width: '100%'
+    width: '100%',
+    marginTop: '-10%'
   }
 
   const column: CSS.Properties = {
@@ -34,6 +32,11 @@ const Home = () => {
     flex: '1'
   }
 
+  const average: CSS.Properties = {
+    color: '#2938fa',
+    fontSize: '2rem',
+  };
+
  const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
  const newResult = Result
  const pages = newResult.map(a => Object.values(a)[3])
@@ -41,23 +44,22 @@ const Home = () => {
 
   return (
   <Page title="Reading Application" variant="regular">
-    <Search onChange={searchChange}/>
-    <div style={container}>
-      <div style={row}>
-          <div style={column}>
-            <Calendar 
-                startDate={startDate} 
-                setStartDate={setStartDate} 
-                endDate={endDate} 
-                setEndDate={setEndDate}
-              />
-          </div>
-          <div style={column}>
-            <ResultData data={Result !== null ? Result : Data.data}/>
-          </div>
-        </div>
+    <div style={row}>
+      <div style={column}>
+        <Search onChange={searchChange}/>
       </div>
-    {(parsePage/noDays)}
+      <div style={column}>
+      <Calendar 
+        startDate={startDate} 
+        setStartDate={setStartDate} 
+        endDate={endDate} 
+        setEndDate={setEndDate}
+      />
+      </div>
+      
+    </div>
+      <p style={average}>{(parsePage/noDays)} pages to read each day!</p>
+      <ResultData data={Result !== null ? Result : Data.data}/>
   </Page>
   )
 }

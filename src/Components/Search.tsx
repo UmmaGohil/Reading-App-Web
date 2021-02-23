@@ -12,12 +12,12 @@ const input: CSS.Properties = {
   color: '#2938fa',
   backgroundColor: '#f1a5d0',
   border: 'none', 
-  fontSize: '2rem'
+  fontSize: '2rem',
+  margin: '0'
 };
 
 const Search = ({ onChange }: Props) => 
   <Page variant="regular">
-    <form>
       <input 
         type='search'
         placeholder='Search...'
@@ -25,7 +25,6 @@ const Search = ({ onChange }: Props) =>
         onChange={onChange}
         style={input}
       />
-    </form>
   </Page>
 
 export default Search
