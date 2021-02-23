@@ -9,8 +9,8 @@ interface Props  {
 }
 
 const h1Styles: CSS.Properties = {
-  color: 'red',
-  backgroundColor: 'blue',
+  color: '#2938fa',
+  backgroundColor: '#f1a5d0',
   fontSize: '5rem'
 };
 
