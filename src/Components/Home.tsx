@@ -15,7 +15,6 @@ const Home = () => {
     const searchResult = Data.data.filter((element) => element.title.includes(e.target.value));
     setResult(searchResult)
   }
-
   
   const row: CSS.Properties = {
     display: 'flex',
@@ -37,10 +36,10 @@ const Home = () => {
     fontSize: '2rem',
   };
 
- const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
- const newResult = Result
- const pages = newResult.map(a => Object.values(a)[3])
- const parsePage: any = [...pages]
+  const noDays = Math.ceil((Math.abs(endDate - startDate))/((1000 * 60 * 60 * 24)))
+  const newResult = Result
+  const pages = newResult.map(a => Object.values(a)[3])
+  const parsePage: any = [...pages]
 
   return (
   <Page title="Reading Application" variant="regular">
@@ -56,12 +55,12 @@ const Home = () => {
         setEndDate={setEndDate}
       />
       </div>
-      
     </div>
       <p style={average}>{(parsePage/noDays)} pages to read each day!</p>
       <ResultData data={Result !== null ? Result : Data.data}/>
   </Page>
   )
 }
+
 export default Home
 

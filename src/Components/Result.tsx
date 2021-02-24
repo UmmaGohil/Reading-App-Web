@@ -28,7 +28,6 @@ const image: CSS.Properties = {
 
 
 const Result = ({ data }: Props) => 
-
   <Page variant="regular">
       {data?.map((a: any ) => (
         <div style={row}>
