@@ -1,7 +1,6 @@
 import React from 'react';
 import CSS from 'csstype';
 
-// ? is optional => title is string or undefined
 interface Props  {
   title?: string,
   children: React.ReactNode,
@@ -16,8 +15,7 @@ const h1Styles: CSS.Properties = {
 
 const Page = ({ title, variant, children }: Props) => <>
   <h2 style={h1Styles}>{ title }</h2>
-  
-    {children}
+  {children}
 </>
 
 export default Page
