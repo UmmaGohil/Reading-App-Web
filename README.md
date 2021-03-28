@@ -1,4 +1,4 @@
-# 🏃‍♀📓Reading App
+# 📓Reading App
 
 The app enables users to search for a book, input a start and end date, and find out the average amount of pages to be read for the given time.
 
