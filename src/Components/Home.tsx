@@ -57,7 +57,9 @@ const Home = () => {
           />
         </div>
         <div style={column}>
-          <p style={average}>{parsePage / noDays} pages to read each day!</p>
+          <p id="my-test-id" style={average}>
+            {parsePage / noDays} pages to read each day!
+          </p>
         </div>
       </div>
 

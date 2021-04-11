@@ -1,11 +1,15 @@
-import * as React from 'react';
-import { render, RenderResult } from '@testing-library/react';
-import Home from './Home';
+import * as React from "react";
+import { render, cleanup, screen } from "@testing-library/react";
+import Home from "./Home";
 
-let documentBody: RenderResult;describe('<Home />', () => {
+describe("<Home />", () => {
   beforeEach(() => {
-    documentBody = render(<Home />);
-  });  it('shows pages to read each day!', () => {
-    expect(documentBody.getByText('pages to read each day!')).toBeInTheDocument();
+    render(<Home />);
   });
+  it("pages to read each day!", () => {
+    const message = "pages to read each day!";
+
+    expect(screen.getByText(message)).toBeInTheDocument();
+  });
+  afterAll(cleanup);
 });
