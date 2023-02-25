@@ -47,7 +47,7 @@ const Home = () => {
 	);
 
 	const pages: totalPages[] = Result.map((a: Object) => Object.values(a)[3]);
-	const parsePage: parseData[] = [...pages];
+	const parsePage: parseData[] | any = [...pages];
 	const total: number = Math.round(parsePage / noDays);
 
 	return (
