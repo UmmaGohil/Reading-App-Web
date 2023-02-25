@@ -34,24 +34,24 @@ const image: CSS.Properties = {
 
 const Result = ({ data }: Props) => (
 	<Page variant="regular">
-		{data?.map((a: string | number | Array<data> | any) => (
+		{data?.map((book: string | number | Array<data> | any) => (
 			<div style={row}>
 				<div style={column}>
-					<h3>{a.title}</h3>
-					<h4>{a.author}</h4>
-					<p>Number of Pages : {a.noPages}</p>
-					<p>ISBN: {a.ISBN}</p>
+					<h3>{book.title}</h3>
+					<h4>{book.author}</h4>
+					<p>Number of Pages : {book.noPages}</p>
+					<p>ISBN: {book.ISBN}</p>
 					<p>
 						Genre:
 						<ul>
-							{a?.genre.map((b: string) => (
-								<li>{b}</li>
+							{book?.genre.map((genre: string) => (
+								<li>{genre}</li>
 							))}
 						</ul>
 					</p>
 				</div>
 				<div style={column}>
-					<img src={a.image} alt={a.title} style={image} />
+					<img src={book.image} alt={book.title} style={image} />
 				</div>
 			</div>
 		))}
