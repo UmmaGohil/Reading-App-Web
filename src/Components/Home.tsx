@@ -8,9 +8,10 @@ import CSS from "csstype";
 
 const Home = () => {
 	const [Result, setResult] = useState<{}[]>([]);
-	const [startDate, setStartDate] = useState<any | number>();
-	const [endDate, setEndDate] = useState<any | number>();
+	const [startDate, setStartDate] = useState<any | Date>();
+	const [endDate, setEndDate] = useState<any | Date>();
 
+	// to do: change so it isn't case sensitive and matches full title of one book
 	const searchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const searchResult = Data.data.filter((element) =>
 			element.title.includes(e.target.value),

@@ -41,7 +41,14 @@ const Result = ({ data }: Props) => (
 					<h4>{a.author}</h4>
 					<p>Number of Pages : {a.noPages}</p>
 					<p>ISBN: {a.ISBN}</p>
-					<p>Genre: {a.genre}</p>
+					<p>
+						Genre:
+						<ul>
+							{a?.genre.map((b: string) => (
+								<li>{b}</li>
+							))}
+						</ul>
+					</p>
 				</div>
 				<div style={column}>
 					<img src={a.image} alt={a.title} style={image} />
