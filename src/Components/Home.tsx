@@ -6,6 +6,14 @@ import ResultData from "../Components/Result";
 import Data from "../Data/Data.json";
 import CSS from "csstype";
 
+type totalPages = {
+	pages: number;
+};
+
+type parsedPages = {
+	pages: number;
+};
+
 const Home = () => {
 	const [Result, setResult] = useState<{}[]>([]);
 	const [startDate, setStartDate] = useState<any | Date>();
@@ -41,10 +49,10 @@ const Home = () => {
 	const noDays: number = Math.ceil(
 		Math.abs(endDate - startDate) / (1000 * 60 * 60 * 24),
 	);
-	// to do [fix var types for pags and parsePage]
-	const pages = Result.map((a: Object) => Object.values(a)[3]);
-	console.log(pages);
-	const parsePage: any = [...pages];
+
+	const pages: totalPages[] = Result.map((a: Object) => Object.values(a)[3]);
+	const parsePage: any | number = [...pages];
+	const total: number = Math.round(parsePage / noDays);
 
 	return (
 		<Page variant="regular">
@@ -60,8 +68,9 @@ const Home = () => {
 				</div>
 				<div style={column}>
 					<p id="my-test-id" style={average}>
-						{/* display message if no book input */}
-						{Math.round(parsePage / noDays)} pages to read each day!
+						{total > 0
+							? `${total} number of pages to read each day!`
+							: "Please search for a book and select a date range."}
 					</p>
 				</div>
 			</div>
