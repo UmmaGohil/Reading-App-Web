@@ -26,3 +26,10 @@ The app enables users to search for a book, input a start and end date, and find
 
 - Improve the design
 - Fix tests
+
+
+### TO DO [feb 2023]
+
+- Migrate to Next.js
+- Add vitetest 
+- Remove inline styles and switch back to CSS 
