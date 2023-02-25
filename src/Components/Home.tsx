@@ -6,13 +6,9 @@ import ResultData from "../Components/Result";
 import Data from "../Data/Data.json";
 import CSS from "csstype";
 
-type totalPages = {
-	pages: number;
-};
+type totalPages = number;
 
-type parsedPages = {
-	pages: number;
-};
+type parseData = number;
 
 const Home = () => {
 	const [Result, setResult] = useState<{}[]>([]);
@@ -51,7 +47,7 @@ const Home = () => {
 	);
 
 	const pages: totalPages[] = Result.map((a: Object) => Object.values(a)[3]);
-	const parsePage: any | number = [...pages];
+	const parsePage: parseData[] = [...pages];
 	const total: number = Math.round(parsePage / noDays);
 
 	return (
