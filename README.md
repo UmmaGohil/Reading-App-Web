@@ -33,3 +33,5 @@ The app enables users to search for a book, input a start and end date, and find
 - Migrate to Next.js
 - Add vitetest 
 - Remove inline styles and switch back to CSS 
+- Run tests: npx vitest
+- Run tests with coverage: npx vitest --coverage
