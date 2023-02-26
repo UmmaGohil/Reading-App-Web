@@ -4,10 +4,10 @@ import Search from "./Search";
 import { isVoidExpression } from "typescript";
 
 describe("<Search />", () => {
-  beforeEach(() => {
-    render(<Search onChange={isVoidExpression} />);
-  });
-  it("find inputs", () => {
-    expect(screen.getAllByRole("searchbox")).toHaveLength(1);
-  });
+	beforeEach(() => {
+		render(<Search onChange={() => {}} />);
+	});
+	it("find inputs", () => {
+		expect(screen.getAllByRole("searchbox")).toHaveLength(1);
+	});
 });

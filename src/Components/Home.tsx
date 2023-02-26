@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Page from "../Pages/Page";
 import Search from "../Components/Search";
 import Calendar from "../Components/Calendar";
@@ -6,66 +6,74 @@ import ResultData from "../Components/Result";
 import Data from "../Data/Data.json";
 import CSS from "csstype";
 
+type totalPages = number;
+
+type parseData = number;
+
 const Home = () => {
-  const [Result, setResult] = useState<{}[]>([]);
-  const [startDate, setStartDate] = useState<any>();
-  const [endDate, setEndDate] = useState<any>();
+	const [Result, setResult] = useState<{}[]>([]);
+	const [startDate, setStartDate] = useState<any | Date>();
+	const [endDate, setEndDate] = useState<any | Date>();
 
-  const searchChange = (e: any) => {
-    const searchResult = Data.data.filter((element) =>
-      element.title.includes(e.target.value)
-    );
-    setResult(searchResult);
-  };
+	// to do: change so it isn't case sensitive and matches full title of one book
+	const searchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+		const searchResult = Data.data.filter((element) =>
+			element.title.includes(e.target.value),
+		);
+		setResult(searchResult);
+	};
 
-  const row: CSS.Properties = {
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    width: "100%",
-  };
+	const row: CSS.Properties = {
+		display: "flex",
+		flexDirection: "row",
+		flexWrap: "wrap",
+		width: "100%",
+	};
 
-  const column: CSS.Properties = {
-    display: "flex",
-    flexDirection: "column",
-    flexBasis: "100%",
-    flex: "1",
-  };
+	const column: CSS.Properties = {
+		display: "flex",
+		flexDirection: "column",
+		flexBasis: "100%",
+		flex: "1",
+	};
 
-  const average: CSS.Properties = {
-    color: "#2938fa",
-    fontSize: "2rem",
-  };
+	const average: CSS.Properties = {
+		color: "#2938fa",
+		fontSize: "2rem",
+	};
 
-  const noDays = Math.ceil(
-    Math.abs(endDate - startDate) / (1000 * 60 * 60 * 24)
-  );
-  const newResult = Result;
-  const pages = newResult.map((a) => Object.values(a)[3]);
-  const parsePage: any = [...pages];
+	const noDays: number = Math.ceil(
+		Math.abs(endDate - startDate) / (1000 * 60 * 60 * 24),
+	);
 
-  return (
-    <Page variant="regular">
-      <Search onChange={searchChange} />
-      <div style={row}>
-        <div style={column}>
-          <Calendar
-            startDate={startDate}
-            setStartDate={setStartDate}
-            endDate={endDate}
-            setEndDate={setEndDate}
-          />
-        </div>
-        <div style={column}>
-          <p id="my-test-id" style={average}>
-            {parsePage / noDays} pages to read each day!
-          </p>
-        </div>
-      </div>
+	const pages: totalPages[] = Result.map((a: Object) => Object.values(a)[3]);
+	const parsePage: parseData[] | any = [...pages];
+	const total: number = Math.round(parsePage / noDays);
 
-      <ResultData data={Result !== null ? Result : Data.data} />
-    </Page>
-  );
+	return (
+		<Page variant="regular">
+			<Search onChange={searchChange} />
+			<div style={row}>
+				<div style={column}>
+					<Calendar
+						startDate={startDate}
+						setStartDate={setStartDate}
+						endDate={endDate}
+						setEndDate={setEndDate}
+					/>
+				</div>
+				<div style={column}>
+					<p id="my-test-id" style={average}>
+						{total > 0
+							? `${total} number of pages to read each day!`
+							: "Please search for a book and select a date range."}
+					</p>
+				</div>
+			</div>
+
+			<ResultData data={Result !== null ? Result : Data.data} />
+		</Page>
+	);
 };
 
 export default Home;
