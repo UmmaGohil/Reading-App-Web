@@ -1,5 +1,6 @@
 import Page from "../Pages/Page";
 import CSS from "csstype";
+import React from "react";
 
 interface Props {
 	data: {}[];

@@ -5,8 +5,10 @@ import "react-nice-dates/build/style.css";
 import CSS from "csstype";
 
 interface Props {
+	// rome-ignore lint/suspicious/noExplicitAny: <explanation>
 	startDate: Date | string | any;
 	setStartDate: DateChangeCallBack;
+	// rome-ignore lint/suspicious/noExplicitAny: <explanation>
 	endDate: Date | string | any;
 	setEndDate: DateChangeCallBack;
 }
@@ -26,6 +28,8 @@ const daterange: CSS.Properties = {
 	marginTop: "-11vh",
 };
 const Calendar = ({ startDate, setStartDate, endDate, setEndDate }: Props) => {
+	//const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
+
 	return (
 		<Page variant="regular">
 			<DateRangePicker
