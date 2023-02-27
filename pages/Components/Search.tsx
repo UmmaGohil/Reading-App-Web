@@ -1,4 +1,3 @@
-import React from "react";
 import Page from "../Pages/Page";
 import CSS from "csstype";
 
