@@ -1,4 +1,3 @@
-import Page from "../Pages/Page";
 import CSS from "csstype";
 
 interface Props {
@@ -17,7 +16,7 @@ const input: CSS.Properties = {
 };
 
 const Search = ({ onChange }: Props) => (
-	<Page variant="regular">
+	<>
 		<input
 			type="search"
 			placeholder="SEARCH"
@@ -25,7 +24,6 @@ const Search = ({ onChange }: Props) => (
 			onChange={onChange}
 			style={input}
 		/>
-	</Page>
+	</>
 );
-
 export default Search;

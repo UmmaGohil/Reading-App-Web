@@ -1,4 +1,3 @@
-import Page from "../Pages/Page";
 import CSS from "csstype";
 import React from "react";
 
@@ -34,7 +33,8 @@ const image: CSS.Properties = {
 };
 
 const Result = ({ data }: Props) => (
-	<Page variant="regular">
+	<>
+		{/* rome-ignore lint/suspicious/noExplicitAny: <explanation> */}
 		{data?.map((book: string | number | Array<data> | any) => (
 			<div style={row}>
 				<div style={column}>
@@ -56,7 +56,7 @@ const Result = ({ data }: Props) => (
 				</div>
 			</div>
 		))}
-	</Page>
+	</>
 );
 
 export default Result;

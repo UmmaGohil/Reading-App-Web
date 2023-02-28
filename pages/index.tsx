@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Page from "./Pages/Page";
 import Search from "./Components/Search";
 import Calendar from "./Components/Calendar";
 import ResultData from "./Components/Result";
@@ -52,7 +51,7 @@ const Home: NextPage = () => {
 	const total: number = Math.round(parsePage / noDays);
 
 	return (
-		<Page variant="regular">
+		<>
 			<Search onChange={searchChange} />
 			<div style={row}>
 				<div style={column}>
@@ -73,7 +72,7 @@ const Home: NextPage = () => {
 			</div>
 
 			<ResultData data={Result !== null ? Result : Data.data} />
-		</Page>
+		</>
 	);
 };
 

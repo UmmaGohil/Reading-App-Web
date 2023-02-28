@@ -1,4 +1,3 @@
-import Page from "../Pages/Page";
 import { enGB } from "date-fns/locale";
 import { DateChangeCallBack, DateRangePicker } from "react-nice-dates";
 import "react-nice-dates/build/style.css";
@@ -31,7 +30,7 @@ const Calendar = ({ startDate, setStartDate, endDate, setEndDate }: Props) => {
 	//const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 	return (
-		<Page variant="regular">
+		<>
 			<DateRangePicker
 				startDate={startDate}
 				endDate={endDate}
@@ -60,7 +59,7 @@ const Calendar = ({ startDate, setStartDate, endDate, setEndDate }: Props) => {
 					</div>
 				)}
 			</DateRangePicker>
-		</Page>
+		</>
 	);
 };
 
