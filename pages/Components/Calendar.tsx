@@ -24,7 +24,7 @@ const input: CSS.Properties = {
 };
 
 const daterange: CSS.Properties = {
-	marginTop: "-11vh",
+	marginTop: "1vh",
 };
 const Calendar = ({ startDate, setStartDate, endDate, setEndDate }: Props) => {
 	//const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
