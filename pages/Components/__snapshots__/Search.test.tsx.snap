@@ -5,9 +5,6 @@ exports[`renders correctly 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h2
-        style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-      />
       <input
         class="search"
         placeholder="SEARCH"
@@ -17,9 +14,6 @@ exports[`renders correctly 1`] = `
     </div>
   </body>,
   "container": <div>
-    <h2
-      style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-    />
     <input
       class="search"
       placeholder="SEARCH"

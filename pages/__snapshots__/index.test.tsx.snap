@@ -5,12 +5,6 @@ exports[`renders correctly 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h2
-        style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-      />
-      <h2
-        style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-      />
       <input
         class="search"
         placeholder="SEARCH"
@@ -23,14 +17,11 @@ exports[`renders correctly 1`] = `
         <div
           style="display: flex; flex-direction: column; flex: 1;"
         >
-          <h2
-            style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-          />
           <div
             class="nice-dates"
           >
             <div
-              style="margin-top: -11vh;"
+              style="margin-top: 1vh;"
             >
               <input
                 class="input -focused"
@@ -402,7 +393,7 @@ exports[`renders correctly 1`] = `
                       </span>
                     </span>
                     <span
-                      class="nice-dates-day -today"
+                      class="nice-dates-day -disabled"
                       style="height: 1px;"
                     >
                       <span
@@ -412,7 +403,7 @@ exports[`renders correctly 1`] = `
                       </span>
                     </span>
                     <span
-                      class="nice-dates-day"
+                      class="nice-dates-day -today"
                       style="height: 1px;"
                     >
                       <span
@@ -563,18 +554,9 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
       </div>
-      <h2
-        style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-      />
     </div>
   </body>,
   "container": <div>
-    <h2
-      style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-    />
-    <h2
-      style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-    />
     <input
       class="search"
       placeholder="SEARCH"
@@ -587,14 +569,11 @@ exports[`renders correctly 1`] = `
       <div
         style="display: flex; flex-direction: column; flex: 1;"
       >
-        <h2
-          style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-        />
         <div
           class="nice-dates"
         >
           <div
-            style="margin-top: -11vh;"
+            style="margin-top: 1vh;"
           >
             <input
               class="input -focused"
@@ -966,7 +945,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </span>
                   <span
-                    class="nice-dates-day -today"
+                    class="nice-dates-day -disabled"
                     style="height: 1px;"
                   >
                     <span
@@ -976,7 +955,7 @@ exports[`renders correctly 1`] = `
                     </span>
                   </span>
                   <span
-                    class="nice-dates-day"
+                    class="nice-dates-day -today"
                     style="height: 1px;"
                   >
                     <span
@@ -1127,9 +1106,6 @@ exports[`renders correctly 1`] = `
         </p>
       </div>
     </div>
-    <h2
-      style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

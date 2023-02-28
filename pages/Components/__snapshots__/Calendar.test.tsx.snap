@@ -5,14 +5,11 @@ exports[`renders correctly 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h2
-        style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-      />
       <div
         class="nice-dates"
       >
         <div
-          style="margin-top: -11vh;"
+          style="margin-top: 1vh;"
         >
           <input
             class="input"
@@ -536,14 +533,11 @@ exports[`renders correctly 1`] = `
     </div>
   </body>,
   "container": <div>
-    <h2
-      style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-    />
     <div
       class="nice-dates"
     >
       <div
-        style="margin-top: -11vh;"
+        style="margin-top: 1vh;"
       >
         <input
           class="input"

@@ -4,17 +4,9 @@ exports[`renders correctly 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
-    <div>
-      <h2
-        style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-      />
-    </div>
+    <div />
   </body>,
-  "container": <div>
-    <h2
-      style="color: rgb(41, 56, 250); background-color: rgb(241, 165, 208); font-size: 5rem;"
-    />
-  </div>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
